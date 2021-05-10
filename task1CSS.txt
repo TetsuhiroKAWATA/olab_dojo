@@ -1,0 +1,12 @@
+#head
+{
+	color :red;
+}
+
+#body .sent span {
+	font-color: #EEEEEE
+}
+
+#body .sent span2 {
+	font-color: "white"
+}
