@@ -1,0 +1,35 @@
+.head
+{
+	color :red;
+}
+
+.deotikana
+{
+	color :red;
+	font-size :2em
+}
+
+.txtcolor transparent
+{
+	color :#EEEEEE;
+}
+
+.txtcolor white
+{
+	color :white;
+}
+
+small
+{
+	font-size:0.6em;
+}
+
+minimum
+{
+	font-size :0.3em;
+}
+
+.table{
+	padding: 1% 35% 5% 10%
+}
+
