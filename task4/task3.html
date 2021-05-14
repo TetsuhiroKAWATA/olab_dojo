@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang ="ja">
+<head>
+	<title>olab道場課題その3【足し算しようぜ！】</title>
+	<meta charset ="UTF-8">
+	<link rel ="stylesheet"href="task4.css">
+</head>
+<body>
+	<div id="nakami">
+	<div id="yoko"><input type="text" id ="n1" value ="0"></div><!-input type="number"と言うものの存在も確認したのですが活用方法が分からず断念・・・。->
+	<div id="yoko"><p id = "red">+</p></div>
+	<div id="yoko"><input type="text" id ="n2" value ="0"></div>
+	<div id="yoko"><p>=</p></div>
+	<div id="yoko"><p id = "answer">0</p></div>
+	<br>
+
+	<input type ="button" value ="ｶﾞｯﾀｲ!" id ="btn1">
+	</div>
+
+	<script>
+		document.getElementById("btn1").onclick = function(){
+			let num1 = parseInt(document.getElementById("n1").value);
+			let num2 = parseInt(document.getElementById("n2").value);
+			document.getElementById("answer").innerHTML=(num1+num2);
+		};
+	</script>
+
+</body>
+</html>
