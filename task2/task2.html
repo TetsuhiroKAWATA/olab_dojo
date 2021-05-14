@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang ="ja">
+<head>
+	<title>olab道場課題その2【Hello, HTML!】</title>
+	<meta charset = "UTF-8">
+</head>
+<body>
+	<input type ="button" value ="切り替え" id="btn1">
+
+	<div>
+	<p id="hello">Hello, HTML!</p></div>
+
+	<script>
+		document.getElementById("btn1").onclick = function(){
+			document.getElementById("hello").innerHTML = "Hello, JS!";
+		};
+	</script>
+		
+</body>
+</html>
