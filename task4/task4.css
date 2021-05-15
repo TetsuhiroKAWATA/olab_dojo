@@ -1,7 +1,19 @@
+#n1, #n2{
+	height: 2em;
+}
+
 #yoko{
 	display: inline-block;
 }
 
 #nakami{
 	text-align: center;
+}
+
+#background{
+	background-color: #CCFFFF;
+}
+
+#foundation{
+	padding:10% 5%;
 }

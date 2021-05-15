@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang ="ja">
+<html lang ="ja" id="foundation">
 <head>
-	<title>olab道場課題その3【足し算しようぜ！】</title>
+	<title>olab道場課題その4【足し算しようぜ！改】</title>
 	<meta charset ="UTF-8">
 	<link rel ="stylesheet"href="task4.css">
 </head>
-<body>
+<body id="background">
+
 	<div id="nakami">
+	<h2>足し算君(名前は適当)</h2>
 	<div id="yoko"><input type="text" id ="n1" value ="0"></div><!-input type="number"と言うものの存在も確認したのですが活用方法が分からず断念・・・。->
 	<div id="yoko"><p id = "red">+</p></div>
 	<div id="yoko"><input type="text" id ="n2" value ="0"></div>
@@ -15,15 +17,11 @@
 	<br>
 
 	<input type ="button" value ="ｶﾞｯﾀｲ!" id ="btn1">
+
+	<p id="cong">まだ使われていません</p>
 	</div>
 
-	<script>
-		document.getElementById("btn1").onclick = function(){
-			let num1 = parseInt(document.getElementById("n1").value);
-			let num2 = parseInt(document.getElementById("n2").value);
-			document.getElementById("answer").innerHTML=(num1+num2);
-		};
-	</script>
+	<script src ="task4.js" charset="utf-8"></script>
 
 </body>
 </html>
