@@ -1,0 +1,14 @@
+#clock{
+	text-align : center;
+	font-size : 5em;
+	color : green;
+	display: inline-block;
+	border : 0.5em solid;
+	border-color : #808000;
+}
+
+#temp{
+	text-align: center;
+}
+
+/*font-family : Monotype Corsiva;*/
