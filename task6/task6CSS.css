@@ -1,0 +1,29 @@
+.table{
+	padding:1% 25% 5% 25%;
+}
+
+.center{
+	text-align:center;
+}
+
+.imginner{
+	max-width:600px;
+	height :200px;
+	margin: 0 auto;
+	overflow: hidden;/*要素のボックス(？)からはみ出した部分をどう扱うかを指定するものらしい。hiddenだと、はみ出た部分が隠れるらしい。*/
+	position: relative;/*参考:https://techacademy.jp/magazine/31004*/
+}
+
+.img{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;/*不透明度らしい*/
+	transition: all 1.0s 0 ease;/*変化が滑らかになるよ　すべての要素を1秒かけて変化させる、遅延は0秒みたいな意味。最後のeaseは変化の仕方らしい*/
+}
+
+.currentimg{
+	opacity :1;
+	z-index :20;/*値が大きいほど上に来るみたいなイメージ。*/
+}
