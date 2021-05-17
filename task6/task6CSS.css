@@ -4,9 +4,10 @@
 
 .center{
 	text-align:center;
+	margin: 0 auto;
 }
 
-.imginner{
+.img-inner{
 	max-width:600px;
 	height :200px;
 	margin: 0 auto;
@@ -20,10 +21,10 @@
 	top: 0;
 	left: 0;
 	opacity: 0;/*不透明度らしい*/
-	transition: all 1.0s 0 ease;/*変化が滑らかになるよ　すべての要素を1秒かけて変化させる、遅延は0秒みたいな意味。最後のeaseは変化の仕方らしい*/
+	transition: all 1.0s 0s ease;/*変化が滑らかになるよ　すべての要素を1秒かけて変化させる、遅延は0秒みたいな意味。最後のeaseは変化の仕方らしい*/
 }
 
-.currentimg{
+.current-img{
 	opacity :1;
 	z-index :20;/*値が大きいほど上に来るみたいなイメージ。*/
 }
