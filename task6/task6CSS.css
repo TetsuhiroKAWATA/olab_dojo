@@ -1,5 +1,5 @@
 .table{
-	padding:1% 25% 5% 25%;
+	padding:1% 19% 5% 19%;
 }
 
 .center{
@@ -9,7 +9,7 @@
 
 .img-inner{
 	max-width:600px;
-	height :200px;
+	height :400px;
 	margin: 0 auto;
 	overflow: hidden;/*要素のボックス(？)からはみ出した部分をどう扱うかを指定するものらしい。hiddenだと、はみ出た部分が隠れるらしい。*/
 	position: relative;/*参考:https://techacademy.jp/magazine/31004*/
@@ -27,4 +27,49 @@
 .current-img{
 	opacity :1;
 	z-index :20;/*値が大きいほど上に来るみたいなイメージ。*/
+}
+
+.menu{
+	display: flex;
+	justify-content:space-around;/*なんかここにflex-basisを置いても何も起こらないのにwidthだとおかしなことになる・・・*/
+	list-style-type: none;
+	color: #9966FF;
+}
+
+.menu li{
+	text-align: center;
+	position :relative;
+	flex-basis: 200px;/*重ねるとこ(語彙力)の幅*/
+	margin-left: 20px;
+	background: #66FF66;
+	padding:5px;
+	list-style: none;//ポッチを消す魔法(適当)
+}
+
+.dropdown-menu{
+	position: absolute;
+	display:none;
+	z-index:30;
+	margin-left:-65px;
+}
+
+.dropdown-menu.open{
+	display: block;
+}
+
+.dropdown-menu li a{
+	display: block;
+	text-decoration: none;
+	background: #66FF66;
+	color: #9966FF;
+	border: 2px solid #FF6666;
+	padding:5px;
+	margin-left:-5px;
+	margin-right:-5px;
+	margin-bottom:-5px;
+	margin-top:-5px;
+}
+
+.dropdown-menu li a:hover{
+	background: #FFCA7B;
 }

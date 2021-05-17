@@ -12,3 +12,13 @@ $(function(){
 		$('.img').eq(index).addClass('current-img');
 	},5000);
 });
+
+$(function(){
+	$(".menu li").hover(
+		function(){
+			$(this).children(".dropdown-menu").addClass("open");
+		}, function(){
+			$(this).children(".dropdown-menu").removeClass("open");
+		}
+	);
+});
